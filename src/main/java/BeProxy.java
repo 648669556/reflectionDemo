@@ -8,10 +8,9 @@ public class BeProxy implements ProxyMethod {
 
     @Override
     @MyTest(lockTableName = "test1")
-    public void giveMoney(@Param String test,
-                          @Param Integer number,
-                          @Param(type = ParamTypeEnum.COLLECTION,value = "getAge")
-                               Set<Student> list) {
+    public void giveMoney(@Param("length")@Param String test, @Param Integer number, @Param(type = ParamTypeEnum.COLLECTION, value = "getName")
+    @Param(type = ParamTypeEnum.COLLECTION, value = "getAge")
+            Set<Student> list) {
         System.out.println("业务内容");
     }
 

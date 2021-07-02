@@ -22,6 +22,6 @@ public class TestProxy {
         List<Student> list = Arrays.asList(student,student1);
 
         //用代理对象去执行方法
-        proxy.giveMoney("null",4,new HashSet<>(list));
+        proxy.giveMoney("采购单号",8888,new HashSet<>(list));
     }
 }
